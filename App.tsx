@@ -1,17 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import HomeScreen from "@/features/home/screens/HomeScreen";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Welcome to Pixly</Text>
-    </View>
-  );
+  return <HomeScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
