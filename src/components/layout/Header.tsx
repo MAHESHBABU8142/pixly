@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#121212",
+    backgroundColor: "black",
   },
   title: {
     fontSize: 24,

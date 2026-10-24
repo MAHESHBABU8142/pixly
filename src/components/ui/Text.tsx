@@ -7,7 +7,6 @@ export default function Text({ style, children, ...props }: TextProps) {
       style={[
         {
           color: "white",
-          fontSize: 20,
         },
         style,
       ]}

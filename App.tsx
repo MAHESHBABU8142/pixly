@@ -1,5 +1,5 @@
-import HomeScreen from "@/features/home/screens/HomeScreen";
+import HomeNavigation from "@/features/home/navigation/HomeNavigation";
 
 export default function App() {
-  return <HomeScreen />;
+  return <HomeNavigation />;
 }

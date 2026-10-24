@@ -17,7 +17,19 @@
       "predictiveBackGestureEnabled": false,
       "package": "com.kiespace.pixly"
     },
-    "plugins": [],
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Pixly needs access to your photos to display your gallery.",
+          "granularPermissions": [
+            "photo"
+          ]
+        }
+      ],
+      "expo-image",
+      "@react-native-vector-icons/ionicons"
+    ],
     "experiments": {
       "reactCompiler": true
     }
