@@ -1,5 +1,5 @@
-import HomeNavigation from "@/features/home/navigation/HomeNavigation";
+import TabsNavigation from "@/features/tabs/navigation/TabsNavigation";
 
 export default function App() {
-  return <HomeNavigation />;
+  return <TabsNavigation />;
 }

@@ -22,13 +22,19 @@
         "expo-media-library",
         {
           "photosPermission": "Pixly needs access to your photos to display your gallery.",
-          "granularPermissions": [
-            "photo"
-          ]
+          "granularPermissions": ["photo"]
         }
       ],
       "expo-image",
-      "@react-native-vector-icons/ionicons"
+      "@react-native-vector-icons/ionicons",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "cmakeVersion": "3.31.6"
+          }
+        }
+      ]
     ],
     "experiments": {
       "reactCompiler": true

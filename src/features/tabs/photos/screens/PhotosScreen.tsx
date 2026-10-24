@@ -1,8 +1,8 @@
-import { StyleSheet, View, useWindowDimensions } from "react-native";
+import { StyleSheet, View, useWindowDimensions ,Image} from "react-native";
 import { useEffect, useState } from "react";
 import { Asset, AssetField, MediaType, Query } from "expo-media-library";
 import { FlashList } from "@shopify/flash-list";
-import { Image } from "expo-image";
+//import { Image } from "expo-image";
 
 export default function PhotosScreen() {
   return (
