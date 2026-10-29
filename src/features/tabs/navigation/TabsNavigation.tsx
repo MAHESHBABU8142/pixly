@@ -2,6 +2,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import AlbumsScreen from "../albums/screens/AlbumsScreen";
 import PhotosScreen from "../photos/screens/PhotosScreen";
+import Icon from "@/components/ui/Icon";
+import { Pressable } from "react-native";
 const Tab = createBottomTabNavigator();
 
 export default function TabsNavigation() {
@@ -11,15 +13,38 @@ export default function TabsNavigation() {
         screenOptions={{
           headerShown: false,
           tabBarActiveTintColor: "#448AFF",
-          tabBarInactiveTintColor: "#888888",
+          tabBarInactiveTintColor: "#6B6A6A",
           tabBarStyle: {
-            backgroundColor: "#121212",
-            borderTopColor: "#252525",
+            backgroundColor: "black",
+            borderTopColor: "black",
           },
+          tabBarButton: (props) => (
+            <Pressable
+              {...props}
+              android_ripple={undefined}
+              style={props.style}
+            />
+          ),
         }}
       >
-        <Tab.Screen name="Photos" component={PhotosScreen} />
-        <Tab.Screen name="Albums" component={AlbumsScreen} />
+        <Tab.Screen
+          name="Photos"
+          component={PhotosScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Icon name="image" size={size} color={color} />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="Albums"
+          component={AlbumsScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <Icon name="folder" size={size} color={color} />
+            ),
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
